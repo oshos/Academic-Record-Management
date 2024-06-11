@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/staff_courses.css" />
+</head>
+<body>
+  <div class="student-dashboard">
+    <div class="sidebar">
+      <div class="academic-record-management">Academic Record Management</div>
+      <div class="list">
+        <div class="menu-item" id="home-menu">
+          <div class="home"></div>
+          <div class="menu-text">Home</div>
+        </div>
+        <div class="menu-item" id="courses-menu">
+          <div class="open-book"></div>
+          <div class="menu-text">Courses</div>
+        </div>
+        <div class="menu-item" id="results-menu">
+          <div class="ratings"></div>
+          <div class="menu-text">Upload Results</div>
+        </div>
+      </div>
+      <div class="menu-items" id="logout-menu">
+        <div class="logout-rounded"></div>
+        <div class="menu-text">Logout</div>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="header">
+        <div class="dashboard">Dashboard</div>
+        <div class="user-info">
+          <div class="male-user"></div>
+          <div class="user-details">Alabi Oshomoshiofu<br />0xc8...bxf8</div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="register-section">
+          <div class="register-title">Register Courses you Teach</div>
+          <div class="register-form">
+            <div class="input-field">
+              <label for="course-code" class="course-code-label">Course Code</label>
+              <input type="text" id="course-code" class="course-code-input" />
+            </div>
+            <div class="input-field">
+              <label for="course-title" class="course-title-label">Course Title</label>
+              <input type="text" id="course-title" class="course-title-input" />
+            </div>
+            <button class="primary-button" onclick="registerCourse()">Register</button>
+          </div>
+        </div>
+        <div class="courses-section">
+          <div class="course-header">
+            <span class="course-code-header">Course Code</span>
+            <span class="course-title-header">Course Title</span>
+            <span class="lecturer-header">No of Students</span>
+          </div>
+          <div id="course-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Web3.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="/src/javascript/staff_courses.js"></script> <!-- javascript for course registration and interaction with blockchain -->
+</body>
+</html>
