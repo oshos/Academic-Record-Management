@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SignUp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/create_page.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="login-container">
+        <div class="login-title">Create an Account</div>
+        <form class="login-form" id="createForm">
+          <div class="input-field">
+            <label for="full-name">Full name</label>
+            <input type="text" id="full-name" name="full-name" required />
+          </div>
+          <div class="input-field">
+            <label for="email-address">Email Address</label>
+            <input type="email" id="email-address" name="email-address" required />
+          </div>
+          <div class="input-field">
+            <label for="select-role">Select Role</label>
+            <select id="select-role" name="select-role" onchange="toggleRoleInput()" required>
+              <option value="" selected>Select your role</option>
+              <option value="lecturer">Lecturer</option>
+              <option value="student">Student</option>
+            </select>
+          </div>
+          <div class="input-field" id="matriculation-number-field" style="display: none;">
+            <label for="matriculation-number">Matriculation Number</label>
+            <input type="text" id="matriculation-number" name="matriculation-number" />
+          </div>
+          <div class="input-field" id="staff-id-field" style="display: none;">
+            <label for="staff-id">Staff ID</label>
+            <input type="text" id="staff-id" name="staff-id" />
+          </div>
+          <button type="submit" class="primary-button">Create</button>
+        </form>
+      </div>
+    </div>
+    
+    <script src="/javascript/create.js"></script>
+
+  </body>
+</html>
