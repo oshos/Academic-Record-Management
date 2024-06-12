@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/landing_page.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <div class="landing-page">
+      <div class="frame-2">
+        <span class="academic-record-management-system">
+          ACADEMIC RECORD MANAGEMENT SYSTEM
+        </span>
+      </div>
+      <div class="frame-3">
+        <div class="primary-button" id="connectWalletButton">
+          <span class="connect-wallet">
+            Connect Wallet
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        document.getElementById('connectWalletButton').addEventListener('click', function() {
+        window.location.href = 'loginpage.html';
+  });
+
+    </script>
+
+  </body>
+</html>
