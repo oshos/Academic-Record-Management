@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Staff Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/staff_dashboard.css" />
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <div class="student-dashboard">
+      <div class="sidebar">
+        <div class="academic-record-management">
+          Academic Record Management
+        </div>
+        <div class="list">
+          <div class="menu-item" id="home-menu">
+            <div class="home"></div>
+            <div class="menu-text">Home</div>
+          </div>
+          <div class="menu-item" id="courses-menu">
+            <div class="open-book"></div>
+            <div class="menu-text">Courses</div>
+          </div>
+          <div class="menu-item" id="results-menu">
+            <div class="ratings"></div>
+            <div class="menu-text">Upload Results</div>
+          </div>
+        </div>
+        <div class="menu-items" id="logout-menu">
+          <div class="logout-rounded"></div>
+          <div class="menu-text">Logout</div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="header">
+          <div class="dashboard">Dashboard</div>
+          <div class="user-info">
+            <div class="male-user"></div>
+            <div class="user-details">
+              Alabi Oshomoshiofu<br />
+              0xc8...bxf8
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <span class="welcome">Welcome</span>
+        </div>
+      </div>
+    </div>
+    <script src="javascript/contract.js"></script>
+    <script src="/javascript/staff_dashboard.js"></script>
+
+  </body>
+</html>
